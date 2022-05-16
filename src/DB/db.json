@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "UI/UX Design",
+      "image": "assets/images/icon/service-icon-1.png",
+      "list": [
+        "Landing Pages",
+        "User Flow",
+        "Wireframing",
+        "Prototyping",
+        "Mobile App Design"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Development",
+      "image": "assets/images/icon/service-icon-2.png",
+      "list": ["HTML/CSS", "JavaScript", "Animation", "WordPress", "React"]
+    },
+    {
+      "id": 3,
+      "title": "Illustration",
+      "image": "assets/images/icon/service-icon-3.png",
+      "list": [
+        "Character Design",
+        "Icon Set",
+        "Illustration Guide",
+        "Illustration Set",
+        "Motion Graphic"
+      ]
+    }
+  ]
+}

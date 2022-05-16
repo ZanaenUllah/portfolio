@@ -32,9 +32,39 @@ const ServiceDisplay = () => {
                         dots
                         loop
                       >
-                        <ServiceSection />
-                        <ServiceSection />
-                        <ServiceSection />
+                        <ServiceSection
+                          title={"UI/UX Design"}
+                          image={"assets/images/icon/service-icon-1.png"}
+                          list={[
+                            "Landing Pages",
+                            "User Flow",
+                            "Wireframing",
+                            "Prototyping",
+                            "Mobile App Design",
+                          ]}
+                        />
+                        <ServiceSection
+                          title={"Development"}
+                          image={"assets/images/icon/service-icon-2.png"}
+                          list={[
+                            "HTML/CSS",
+                            "JavaScript",
+                            "Animation",
+                            "WordPress",
+                            "React",
+                          ]}
+                        />
+                        <ServiceSection
+                          title={"Illustration"}
+                          image={"assets/images/icon/service-icon-3.png"}
+                          list={[
+                            "Character Design",
+                            "Icon Set",
+                            "Illustration Guide",
+                            "Illustration Set",
+                            "Motion Graphic",
+                          ]}
+                        />
                       </OwlCarousel>
                     </div>
                   </div>

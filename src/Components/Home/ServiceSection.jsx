@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ServiceSection = () => {
+const ServiceSection = (props) => {
+  const { title, image, list } = props;
+
   return (
     <>
       {/* Start Service Section Wrapper */}
@@ -14,17 +16,15 @@ const ServiceSection = () => {
       >
         <div className="inner-shape inner-shape-top-right" />
         <div className="icon">
-          <img src="assets/images/icon/service-icon-1.png" alt="" />
+          <img src={image} alt="" />
         </div>
         <h4 className="title">
-          <Link to="service-details.html">UI/UX Design</Link>
+          <Link to="/service-details">{title}</Link>
         </h4>
         <ul className="list-item">
-          <li>Landing Pages</li>
-          <li>User Flow</li>
-          <li>Wireframing</li>
-          <li>Prototyping</li>
-          <li>Mobile App Design</li>
+          {list.map((name) => (
+            <li key={name}>{name}</li>
+          ))}
         </ul>
         <div className="inner-shape inner-shape-bottom-right" />
       </div>
