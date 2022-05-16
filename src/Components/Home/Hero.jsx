@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,23 +19,23 @@ const Hero = () => {
                     ReactJS &amp; Laravel developer also specialization in &amp;
                     Wordpress.
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn btn-xl btn-outline-one icon-space-left"
                   >
                     Get Resume <i className="icofont-download" />
-                  </a>
+                  </Link>
                   <div className="video-link">
-                    <a
+                    <Link
                       className="wave-btn"
-                      href="https://youtu.be/MKjhBO2xQzg"
+                      to="https://youtu.be/MKjhBO2xQzg"
                       data-autoplay="true"
                       data-vbtype="video"
                     >
                       <div className="ripple">
                         <i className="icofont-ui-play" />
                       </div>
-                    </a>
+                    </Link>
                     <span className="video-text">Watch Video</span>
                   </div>
                 </div>
@@ -56,22 +57,22 @@ const Hero = () => {
               <img
                 className="img-fluid"
                 src="assets/images/portrait/portrait-hero.png"
-                alt=""
+                alt="portrait-hero"
               />
               <div className="image-half-round-shape" />
               <div className="social-link">
-                <a href="https://www.example.com" target="_blank">
+                <Link to="https://www.example.com" target="_blank">
                   <i className="icofont-facebook" />
-                </a>
-                <a href="https://www.example.com" target="_blank">
+                </Link>
+                <Link to="https://www.example.com" target="_blank">
                   <i className="icofont-dribbble" />
-                </a>
-                <a href="https://www.example.com" target="_blank">
+                </Link>
+                <Link to="https://www.example.com" target="_blank">
                   <i className="icofont-behance" />
-                </a>
-                <a href="https://www.example.com" target="_blank">
+                </Link>
+                <Link to="https://www.example.com" target="_blank">
                   <i className="icofont-linkedin" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

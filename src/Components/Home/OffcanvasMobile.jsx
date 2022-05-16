@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OffcanvasMobile = () => {
   return (
@@ -23,82 +24,84 @@ const OffcanvasMobile = () => {
             <div className="offcanvas-menu">
               <ul>
                 <li>
-                  <a href="index.html">
+                  <Link to="/">
                     <span>Home</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <span>Services</span>
-                  </a>
+                  </Link>
                   <ul className="mobile-sub-menu">
                     <li>
-                      <a href="service-list.html">Service List</a>
+                      <Link to="service-list.html">Service List</Link>
                     </li>
                     <li>
-                      <a href="service-details.html">Service Details</a>
+                      <Link to="service-details.html">Service Details</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <span>Blog</span>
-                  </a>
+                  </Link>
                   <ul className="mobile-sub-menu">
                     <li>
-                      <a href="blog-list.html">Blog List Full Width</a>
+                      <Link to="blog-list.html">Blog List Full Width</Link>
                     </li>
                     <li>
-                      <a href="blog-list-sidebar-left.html">
+                      <Link to="blog-list-sidebar-left.html">
                         Blog List Left Sidebar
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="blog-list-sidebar-right.html">
+                      <Link to="blog-list-sidebar-right.html">
                         Blog List Right Sidebar
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="blog-details.html">Blog Details Full Width</a>
+                      <Link to="blog-details.html">
+                        Blog Details Full Width
+                      </Link>
                     </li>
                     <li>
-                      <a href="blog-details-sidebar-left.html">
+                      <Link to="blog-details-sidebar-left.html">
                         Blog Details Left Sidebar
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="blog-details-sidebar-right.html">
+                      <Link to="blog-details-sidebar-right.html">
                         Blog Details Right Sidebar
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <span>Pages</span>
-                  </a>
+                  </Link>
                   <ul className="mobile-sub-menu">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <Link to="about.html">About Us</Link>
                     </li>
                     <li>
-                      <a href="project-list.html">Project</a>
+                      <Link to="project-list.html">Project</Link>
                     </li>
                     <li>
-                      <a href="project-details.html">Project Details</a>
+                      <Link to="project-details.html">Project Details</Link>
                     </li>
                     <li>
-                      <a href="faq.html">FAQ</a>
+                      <Link to="faq.html">FAQ</Link>
                     </li>
                     <li>
-                      <a href="404-page.html">404 Page</a>
+                      <Link to="404-page.html">404 Page</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="contact.html">
+                  <Link to="contact.html">
                     <span>Contact</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -109,19 +112,19 @@ const OffcanvasMobile = () => {
           <div className="mobile-contact-info text-center">
             <ul className="social-link">
               <li>
-                <a target="_blank" href="https://example.com">
+                <Link target="_blank" to="https://example.com">
                   <i className="icofont-facebook" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a target="_blank" href="https://example.com">
+                <Link target="_blank" to="https://example.com">
                   <i className="icofont-twitter" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a target="_blank" href="https://example.com">
+                <Link target="_blank" to="https://example.com">
                   <i className="icofont-skype" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

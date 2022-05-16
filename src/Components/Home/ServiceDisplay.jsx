@@ -1,4 +1,6 @@
 import React from "react";
+import ServiceSection from "./ServiceSection";
+import OwlCarousel from "react-owl-carousel";
 
 const ServiceDisplay = () => {
   return (
@@ -23,26 +25,17 @@ const ServiceDisplay = () => {
                 <div className="service-display-slider">
                   <div className="swiper-container">
                     <div className="swiper-wrapper">
-                      <div className="service-box-single-item swiper-slide">
-                        <div className="inner-shape inner-shape-top-right" />
-                        <div className="icon">
-                          <img
-                            src="assets/images/icon/service-icon-1.png"
-                            alt=""
-                          />
-                        </div>
-                        <h4 className="title">
-                          <a href="service-details.html">UI/UX Design</a>
-                        </h4>
-                        <ul className="list-item">
-                          <li>Landing Pages</li>
-                          <li>User Flow</li>
-                          <li>Wireframing</li>
-                          <li>Prototyping</li>
-                          <li>Mobile App Design</li>
-                        </ul>
-                        <div className="inner-shape inner-shape-bottom-right" />
-                      </div>
+                      <OwlCarousel
+                        className="owl-theme"
+                        items={3}
+                        autoplay={true}
+                        dots
+                        loop
+                      >
+                        <ServiceSection />
+                        <ServiceSection />
+                        <ServiceSection />
+                      </OwlCarousel>
                     </div>
                   </div>
                 </div>

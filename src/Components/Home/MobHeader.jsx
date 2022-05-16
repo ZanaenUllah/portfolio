@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MobHeader = () => {
   return (
@@ -9,20 +10,20 @@ const MobHeader = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col">
               <div className="mobile-logo">
-                <a href="index.html">
+                <Link to="/">
                   <img src="assets/images/logo/logo.png" alt="" />
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col">
               <div className="mobile-action-link text-end">
-                <a
-                  href="#mobile-menu-offcanvas"
+                <Link
+                  to="#mobile-menu-offcanvas"
                   className="offcanvas-toggle offside-menu"
                 >
                   <i className="icofont-navigation-menu" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
